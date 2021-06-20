@@ -1,3 +1,6 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: Jekyll Tailwind Boilerplate Project
+description: a starter project for getting up and running with Jekyll using Tailwind CSS
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
