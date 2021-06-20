@@ -7,7 +7,7 @@
     "jekyll:dev": "bundle exec jekyll serve --watch",
     "jekyll:build": "bundle exec jekyll build",
     "css:dev": "postcss _sass/main.scss --output assets/css/style.css --watch",
-    "css:build": "NODE_ENV=production postcss _sass/main.scss --output assets/css/style.css",
+    "css:build": "postcss _sass/main.scss --output assets/css/style.css",
     "dev": "concurrently --kill-others \"npm run jekyll:dev\" \"npm run css:dev\"",
     "build": "npm run css:build && npm run jekyll:build"
   },
