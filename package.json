@@ -1,0 +1,25 @@
+{
+  "name": "jekyll-tailwind-bp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jekyll:dev": "bundle exec jekyll serve --watch",
+    "jekyll:build": "bundle exec jekyll build",
+    "css:dev": "postcss _sass/main.scss --output assets/css/style.css --watch",
+    "css:build": "NODE_ENV=production postcss _sass/main.scss --output assets/css/style.css",
+    "dev": "concurrently --kill-others \"npm run jekyll:dev\" \"npm run css:dev\"",
+    "build": "npm run css:build && npm run jekyll:build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "concurrently": "^6.2.0",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.2"
+  }
+}
